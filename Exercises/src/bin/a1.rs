@@ -8,6 +8,18 @@
 // * Use a function to display your last name
 // * Use the println macro to display messages to the terminal
 
- fn main() {}
+fn main() {
+   let f = first_name();
+   let l = last_name();
+  println!("The {} name and the {} name",f,l );
+}
+
+fn first_name() -> &'static str  {
+  return "First";
+}
+
+fn last_name() -> &'static str{
+  return "Last";
+}
 
  
